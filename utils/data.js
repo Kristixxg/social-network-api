@@ -1,13 +1,23 @@
 const names = [
-    'username 1',
-    'username 2',
-    'username 3',
-    'username 4',
-    'username 5',
-    'username 6',
-    'username 7',
-    'username 8',
-    'username 9',
+    'testusername 1',
+    'testusername 2',
+    'testusername 3',
+    'testusername 4',
+    'testusername 5',
+    'testusername 6',
+    'testusername 7',
+    'testusername 8',
+    'testusername 9',
+    'testusername 10',
+    'testusername 11',
+    'testusername 12',
+    'testusername 13',
+    'testusername 14',
+    'testusername 15',
+    'testusername 16',
+    'testusername 17',
+    'testusername 18',
+    'testusername 19',
   ];
 
   const thoughts = [  
@@ -20,6 +30,16 @@ const names = [
   'This is Thought 7',
   'This is Thought 8',
   'This is Thought 9',
+  'This is Thought 10',
+  'This is Thought 11',
+  'This is Thought 12',
+  'This is Thought 13',
+  'This is Thought 14',
+  'This is Thought 15',
+  'This is Thought 16',
+  'This is Thought 17',
+  'This is Thought 18',
+  'This is Thought 19',
 ];
 
 const reactions = [  
@@ -32,6 +52,16 @@ const reactions = [
     'This is reaction 7',
     'This is reaction 8',
     'This is reaction 9',
+    'This is reaction 10',
+    'This is reaction 11',
+    'This is reaction 12',
+    'This is reaction 13',
+    'This is reaction 14',
+    'This is reaction 15',
+    'This is reaction 16',
+    'This is reaction 17',
+    'This is reaction 18',
+    'This is reaction 19',
   ];
 
 
@@ -53,7 +83,7 @@ const getRandomThoughts = (int) => {
         })
     }
     return results;
-}
+};
 
 const getThoughtReaction = (int) => {
  if( int === 1 ) {
@@ -63,10 +93,10 @@ const getThoughtReaction = (int) => {
  for (let i=0; i < int; i++) {
      results.push({
         reactionBody: getRandomArrItem(reactions),
-        username: getRandomArrItem(names),
+        username: getRandomName(),
      })
  }
  return results;
 }
 
-module.exports = {getRandomName, getRandomThoughts, getThoughtReaction}
+module.exports = {getRandomName, getRandomThoughts}

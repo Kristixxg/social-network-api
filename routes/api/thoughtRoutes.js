@@ -12,7 +12,7 @@ const {
 // /api/thoughts
 router.route('/').get(getThoughts).post(createThought);
 
-// /api/thoughts/:thoughtId
+// // /api/thoughts/:thoughtId
 router
   .route('/:thoughtId')
   .get(getSingleThought)
@@ -20,10 +20,10 @@ router
   .delete(deleteThought);
 
 
-// /api/thoughts/:thoughtId/reactions
-router.route('/:thoughtId/reactions').post(addReaction);
+// // /api/thoughts/:thoughtId/reactions
+// router.route('/:thoughtId/reactions').post(addReaction);
 
-// /api/thoughts/:thoughtId/reactions/:reactionId
-router.route('/:thoughtId/reactions/:reactionId').post(removeReaction);
+// // /api/thoughts/:thoughtId/reactions/:reactionId
+// router.route('/:thoughtId/reactions/:reactionId').post(removeReaction);
 
 module.exports = router;
